@@ -64,8 +64,6 @@ boringButton.addEventListener("click", showBoringView);
 clockSelectedCity.addEventListener("click", showCitiesDropdown);
 
 document.addEventListener("DOMContentLoaded", () => {
-  backgroundVideo.src =
-    "https://api.met.no/weatherapi/geosatellite/1.4/europe.mp4";
   fillCitiesDropdown(cities);
   changeCity("Bergen");
   console.log("sjdfdsfkj");
