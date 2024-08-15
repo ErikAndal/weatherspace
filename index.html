@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Værvarslingen</title>
+  </head>
+  <body>
+    <div id="cities-dropdown-container"></div>
+    <div id="cities-dropdown-background"></div>
+    <video autoplay loop playsinline controls id="backgroundVideo">
+      Your browser does not support the video tag.
+    </video>
+    <div id="weather-container"></div>
+    <div id="weather-container-day"></div>
+    <div id="spaceship"></div>
+    <button id="forecast-length-button">
+      <span id="hourly-span">HOURLY</span>
+      <span id="daily-span" class="active">DAILY</span>
+    </button>
+    <button id="boring-view-button">BORING VIEW</button>
+    <button id="clock-selected-city"></button>
+    <div id="clock">
+      <div id="clock-text">
+        <span class="digit" id="hour1">0</span>
+        <span class="digit" id="hour2">0</span>
+        <span class="separator">:</span>
+        <span class="digit" id="minute1">0</span>
+        <span class="digit" id="minute2">0</span>
+        <span class="separator">:</span>
+        <span class="digit" id="second1">0</span>
+        <span class="digit" id="second2">0</span>
+      </div>
+      <div id="clock-date">
+        <span id="clock-weekday"></span>
+        <span id="clock-day"></span>
+        <span id="clock-month"></span>
+      </div>
+    </div>
+    <div id="ellipse"></div>
+    <div id="boring-view-container">
+      <div id="boring-view-grid"></div>
+    </div>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
